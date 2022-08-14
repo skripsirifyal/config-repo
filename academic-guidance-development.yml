@@ -11,8 +11,6 @@ eureka:
 spring:
   profiles:
     active: heroku
-  config:
-    import: optional:configservice:https://root:4c4d3mIc5ec12eT@guidance-config-service.herokuapp.com
   application:
     name: academic-guidance-service
   datasource:

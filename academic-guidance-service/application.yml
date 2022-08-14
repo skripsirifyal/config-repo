@@ -1,4 +1,3 @@
----
 eureka:
   instance:
     hostname: academic-guidance-service.herokuapp.com
@@ -10,8 +9,6 @@ eureka:
     region: default
     registry-fetch-interval-seconds: 5
 spring:
-  profiles:
-    active: heroku
   config:
     activate:
       on-profile: heroku

@@ -1,6 +1,0 @@
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/

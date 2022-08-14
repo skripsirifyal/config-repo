@@ -10,7 +10,7 @@ eureka:
     registry-fetch-interval-seconds: 5
 spring:
   application:
-    name: academic-guidance-service
+    name: academic-guidance
   datasource:
     url: jdbc:postgresql://ec2-44-195-100-240.compute-1.amazonaws.com:5432/d8uf3fitmjh5kd
     username: pmzwjpdriwfzld

@@ -8,15 +8,6 @@ eureka:
     serviceUrl:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
-  config:
-    activate:
-      on-profile: heroku
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/skripsirifyal/config-repo
-          skip-ssl-validation: true
   application:
     name: academic-guidance-service
   datasource:

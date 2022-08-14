@@ -8,6 +8,10 @@ eureka:
     serviceUrl:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
+  config:
+    activate:
+      on-profile: heroku
+    import: optional:config-service:https://root:4c4d3mIc5ec12eT@guidance-config-service.herokuapp.com
   application:
     name: academic-guidance-service
   datasource:

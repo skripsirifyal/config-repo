@@ -7,6 +7,8 @@ eureka:
     register-with-eureka: true
     serviceUrl:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
+    region: default
+    registry-fetch-interval-seconds: 5
 spring:
   config:
     activate:

@@ -9,8 +9,6 @@ eureka:
     region: default
     registry-fetch-interval-seconds: 5
 spring:
-  config:
-    import: optional:configservice:https://root:4c4d3mIc5ec12eT@guidance-config-service.herokuapp.com
   datasource:
     url: jdbc:postgresql://ec2-44-195-100-240.compute-1.amazonaws.com:5432/d8uf3fitmjh5kd
     username: pmzwjpdriwfzld

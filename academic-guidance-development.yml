@@ -9,8 +9,6 @@ eureka:
     region: default
     registry-fetch-interval-seconds: 5
 spring:
-  profiles:
-    active: heroku
   application:
     name: academic-guidance-service
   datasource:

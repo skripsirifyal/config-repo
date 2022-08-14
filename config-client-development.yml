@@ -1,2 +1,30 @@
-user:
-  role: Developer
+eureka:
+  instance:
+    hostname: academic-guidance-service.herokuapp.com
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
+    region: default
+    registry-fetch-interval-seconds: 5
+spring:
+  profiles:
+    active: heroku
+  config:
+    import: optional:configservice:https://root:4c4d3mIc5ec12eT@guidance-config-service.herokuapp.com
+  application:
+    name: academic-guidance-service
+  datasource:
+    url: jdbc:postgresql://ec2-44-195-100-240.compute-1.amazonaws.com:5432/d8uf3fitmjh5kd
+    username: pmzwjpdriwfzld
+    password: 83a1b640f1ea8cac5f8e3b34815fb2f22c27179d077bc8b818d0d0706ec743fe
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: create-drop
+#spring.jpa.hibernate.ddl-auto=create-drop
+#springdoc.show-actuator=false
+#spring.jackson.serialization.indent_output=true

@@ -1,13 +1,3 @@
-eureka:
-  instance:
-    hostname: academic-guidance-service.herokuapp.com
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
-    region: default
-    registry-fetch-interval-seconds: 5
 spring:
   application:
     name: academic-guidance-service

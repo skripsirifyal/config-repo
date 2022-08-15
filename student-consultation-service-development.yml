@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: student-consultation-service
+  datasource:
+    url: jdbc:postgresql://ec2-44-195-100-240.compute-1.amazonaws.com:5432/d8uf3fitmjh5kd
+    username: pmzwjpdriwfzld
+    password: 83a1b640f1ea8cac5f8e3b34815fb2f22c27179d077bc8b818d0d0706ec743fe
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: create-drop

@@ -2,9 +2,9 @@ spring:
   application:
     name: student-consultation-service
   datasource:
-    url: jdbc:postgresql://ec2-44-195-100-240.compute-1.amazonaws.com:5432/d8uf3fitmjh5kd
-    username: pmzwjpdriwfzld
-    password: 83a1b640f1ea8cac5f8e3b34815fb2f22c27179d077bc8b818d0d0706ec743fe
+    url: jdbc:postgresql://ec2-54-152-28-9.compute-1.amazonaws.com:5432/ds2452uku3go7
+    username: ydarouiesykgfm
+    password: f739610cd21c7dbe10bb9b9ac79e4eb5147f1a6f51d4800a887b5c4698634100
   jpa:
     properties:
       hibernate:
